@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+
+    <title>Project - GLUZBERG YAEL</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="projectYael.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Architects+Daughter&family=IBM+Plex+Sans+Hebrew:wght@200;500&family=M+PLUS+1+Code:wght@200&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Architects+Daughter&family=IBM+Plex+Sans+Hebrew:wght@200;500&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="loadFromStorage()">
+    <h1>...אז מה יש לי לעשות בחיים</h1>
+
+    <div id="note-lines">
+        <form onsubmit="addThisNote()">
+
+            <p class="plabel">
+                ...במשפחה,לעצמי או לחברה <br />
+                <textarea id="textArea1" class="inputs" rows="5" cols="50" placeholder="...לא להתעצל לפרט" required></textarea>
+            </p>
+            <p class="plabel">
+                ...להשתדל לסיים עד <br />
+                <input id="inputDate" type="date" class="inputs" required />
+            </p>
+
+            <p class="plabel">
+                ...דקה ה-90 <br />
+                <input id="inputTime" type="time" class="inputs" required />
+            </p>
+
+            <button id="button" class="button">תוסיפי לרשימה</button>
+            <button type=reset id="button" class="button">ירד מהפרק...</button>
+
+
+        </form>
+    </div>
+    <hr style="width: 100%; height: 6px; background-color: white; margin-top: 50px; margin-bottom: 0px;">
+
+    <div id="notes-container">
+    </div>
+
+
+    <script src="projectYael.js"></script>
+</body>
+
+</html>
